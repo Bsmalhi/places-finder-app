@@ -1,6 +1,6 @@
 //Map settings
 #map {
-  height: 600px;
+  height: 500px;
   width: 500px;
 
 }
@@ -19,7 +19,7 @@ tr{
 
 #listing {
   overflow: auto;
-  height: 600px;
+  height: 500px;
   width: 350px;
   overflow-x: hidden;
   cursor: pointer;
@@ -54,7 +54,7 @@ tr{
 }
 #footer{
   background-color: #292D35;
-  margin-top: 50px;
+  margin-top: 10px;
   width: auto;
   color: white;
   text-align: center;
@@ -66,5 +66,7 @@ tr{
   p{
     text-align: center;
   }
-  
+}
+.text-center{
+margin-top: 55px;
 }
