@@ -21,8 +21,8 @@ npm install
 
 ## Run all tasks
 ```bash
-After installing Dependencies go to terminal and run **gulp**. 
-Go to the port provided and click on dist folder to use the app.
+After installing Dependencies go to terminal and run gulp. 
+Go to the port provided on your browser and click on dist folder to use the app.
 ```
 
 
