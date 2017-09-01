@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Landing Page for Some App</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       
+       <!-- Optional theme -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+       
+       <!-- Latest compiled and minified JavaScript -->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+</head>
+  
+<body>
+  <div class="navbar navbar-default navbar-fixed-top top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                
+                </button>
+                <a class="navbar-brand">PlaceFinderApp</a> 
+          </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="#search">Search</a></li>
+                </ul>
+            </div>
+        </div>
+  </div>
+  <!--the end -->
+  <div class="container">
+      <div class="row">
+        <div class="text-center">
+          <h3>Please type in the Search to find places in Google Maps</h3>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            
+            <div class="form-row">
+              <div class="col-lg-12">
+                      <label for="exampleFormControlInput1">Enter Place</label>
+                      <input type="text" class="form-control" id="autocomplete" placeholder="Enter a Place">
+              </div>
+            </div>
+            
+          </div><!-- /.col-lg-6 -->
+        </div>
+        <br/>
+      <div class="row ">
+          <div class="col-lg-5 col-lg-offset-1">
+              <div id="listing">
+                  <table id="resultsTable">
+                    <tbody id="results"></tbody>
+                  </table>
+              </div>
+              <div style="display: none">
+                  <div id="info-content">
+                    <table>
+                      <tr id="iw-url-row" class="iw_table_row">
+                        <td id="iw-icon" class="iw_table_icon"></td>
+                        <td id="iw-url"></td>
+                      </tr>
+                      <tr id="iw-address-row" class="iw_table_row">
+                        <td class="iw_attribute_name">Address:</td>
+                        <td id="iw-address"></td>
+                      </tr>
+                    </table>
+                  </div>
+                
+              </div>
+          </div>
+          <div class="col-lg-5">
+              <div id="map"></div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container contentContainer " id="footer">    
+        <p class="navbar-text"> &copy; 2017 - Site built by Baljot Malhi</p>
+   </div>
+
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwNDmJRbg3UO7kNP68sEVVm1zv_pPuqok&libraries=places&callback=initMap"
+    async defer></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

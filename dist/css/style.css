@@ -1,0 +1,62 @@
+#map {
+  height: 600px;
+  width: 500px; }
+
+/* Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+table {
+  font-size: 12px; }
+
+tr {
+  cursor: pointer; }
+
+#listing {
+  overflow: auto;
+  height: 600px;
+  width: 350px;
+  overflow-x: hidden;
+  cursor: pointer; }
+
+#autocomplete {
+  width: 80%; }
+
+.placeIcon {
+  width: 20px;
+  height: 34px;
+  margin: 4px; }
+
+.icon {
+  width: 24px;
+  height: 24px;
+  padding-right: 5px; }
+
+#resultsTable {
+  border-collapse: collapse;
+  width: 100%; }
+
+.iw_table_row {
+  height: 18px; }
+
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right; }
+
+.iw_table_icon {
+  text-align: right; }
+
+#footer {
+  background-color: #292D35;
+  margin-top: 50px;
+  width: auto;
+  color: white;
+  text-align: center; }
+
+.navbar-text {
+  float: inherit; }
+
+#footer p {
+  text-align: center; }

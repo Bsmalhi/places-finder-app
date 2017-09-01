@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 70px; }
+
+.container {
+  text-align: center; }
+
+.navbar-brand {
+  font-size: 1.8em; }
+
+#topContainer {
+  background-image: url("../images/forest.jpeg");
+  width: 100%;
+  background-size: cover; }
+
+#topRow {
+  margin-top: 100px;
+  text-align: center; }
+
+#topRow h1 {
+  font-size: 300%; }
+
+.marginTop {
+  margin-top: 30px; }
+
+.center {
+  text-align: center; }
+
+.title {
+  margin-top: 100px;
+  font-size: 300%; }
+
+#footer {
+  background-color: #292D35;
+  margin-top: 50px;
+  width: auto;
+  color: white;
+  text-align: center; }
+
+.navbar-text {
+  float: inherit; }
+
+.marginBottom {
+  margin-bottom: 60px; }
+
+.appImage {
+  width: 250px; }
+
+#link {
+  text-decoration: none;
+  color: #fff; }
+
+.btTop {
+  margin-top: 10px;
+  margin-bottom: 10px; }

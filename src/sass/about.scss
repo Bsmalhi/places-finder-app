@@ -1,0 +1,24 @@
+$w: #fff;
+$footC: #292D35;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    text-align: center;
+}
+
+#footer{
+    background-color: $footC;
+    margin-top: 50px;
+    width: auto;
+    color: $w;
+    text-align: center;
+}
+
+.navbar-text{
+    float: inherit;
+}

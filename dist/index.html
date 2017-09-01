@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Landing Page for Some App</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       
+       <!-- Optional theme -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+       
+       <!-- Latest compiled and minified JavaScript -->
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/home.css">
+</head>
+     <body>
+          <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                           
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        
+                       </button>
+                       <a class="navbar-brand">PlaceFinderApp</a> 
+                 </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+       
+         <div class="container contentContainer" id="topContainer">
+             <div class="row">
+                <div class="col-md-6 col-md-offset-3" id="topRow">
+                    <h1 class="marginTop">Place Finder App</h1>
+                    <p class="lead"> Find Places around the world using google maps search tool</p>
+                    <p>Get started by registering your email to access the Place Finder tool</p>
+                    <p class="bold marginTop">Interested? join our mailing list!</p>
+                    <form class="marginTop"> 
+                       <div class="input-group">
+                           <span class="input-group-addon">@</span>
+                           <input type="email" id="email" class="form-control" placeholder="Your email" onkeydown="if (event.keyCode == 13) return false;" required>
+                       </div>
+                        <input type="button" class="btn btn-success btn-md btTop" onclick="continueornot()" value="Submit">
+                    </form>
+                </div>
+             </div>
+         </div>
+
+         <div class="container contentContainer">
+            
+              <div class="row" class="center">
+            
+                <h1 class="center title ">Why this app is awesome?</h1>
+                <p class="lead center"> Features of the app</p>
+            
+              </div>
+            
+              <div class="row marginBottom">
+            
+                <div class="col-md-4 marginTop">
+                  <h2><span class="glyphicon glyphicon-cog"></span>GoogleMaps API</h2>
+                  <p>Google Maps API provides the power to search different places around the world. Using this app you can search millions of places within seconds.</p>
+                  <!-- <button class="btn btn-success marginTop"> Sign up!</button> -->
+                </div>
+            
+                <div class="col-md-4 marginTop">
+                  <h2><span class="glyphicon glyphicon-pencil"></span>AutoComplete Search</h2>
+                  <p>Web App has Autocomplete feature which helps in providing suggestions about the places below the search box as user starts typing names of places.</p>
+                  <!-- <button class="btn btn-success marginTop"> Sign up!</button> -->
+                </div>
+            
+                <div class="col-md-4 marginTop">
+                  <h2><span class="glyphicon glyphicon-picture"></span>Google Maps </h2>
+                  <p>See the places you searched for in the google Maps and find the location or address of the place you searched.</p>
+                  <!-- <button class="btn btn-success marginTop glyp3"> Sign up!</button> -->
+                </div>
+            
+              </div>
+            
+            </div>
+            
+            <div class="navbar navbar-fixed-bottom" id="footer">    
+                <p class="navbar-text"> &copy; 2017 - Site built by Baljot Malhi</p>
+           </div>
+            
+         <script type="text/javascript">
+         $("#contentContainer").css("min-height",$(window).height());
+         
+         function validateEmail(email) { 
+              var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              return re.test(email);
+          } 
+
+          function continueornot() {
+            var email = document.getElementById('email');
+              
+              if(validateEmail(email.value)){
+                location.href = 'search.html';
+              }else{ 
+                alert("email not valid"); return false;
+                submit.disabled = true;
+              }
+          }
+
+         </script>
+
+     </body>
+</html>

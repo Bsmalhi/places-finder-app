@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  text-align: center; }
+
+#footer {
+  background-color: #292D35;
+  margin-top: 50px;
+  width: auto;
+  color: #fff;
+  text-align: center; }
+
+.navbar-text {
+  float: inherit; }
